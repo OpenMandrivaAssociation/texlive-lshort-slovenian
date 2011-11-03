@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /info/lshort/slovenian
+# catalog-date 2008-08-22 10:50:40 +0200
+# catalog-license gpl
+# catalog-version 4.20
 Name:		texlive-lshort-slovenian
 Version:	4.20
 Release:	1
@@ -38,6 +44,7 @@ LaTeX 2e.
 %doc %{_texmfdistdir}/doc/latex/lshort-slovenian/src/things.tex
 %doc %{_texmfdistdir}/doc/latex/lshort-slovenian/src/title.tex
 %doc %{_texmfdistdir}/doc/latex/lshort-slovenian/src/typeset.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -48,3 +55,5 @@ LaTeX 2e.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
