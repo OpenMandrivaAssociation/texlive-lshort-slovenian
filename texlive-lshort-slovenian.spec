@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-slovenian.
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 A Slovenian translation of the Not So Short Introduction to
@@ -44,7 +42,6 @@ LaTeX 2e.
 %doc %{_texmfdistdir}/doc/latex/lshort-slovenian/src/things.tex
 %doc %{_texmfdistdir}/doc/latex/lshort-slovenian/src/title.tex
 %doc %{_texmfdistdir}/doc/latex/lshort-slovenian/src/typeset.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -55,5 +52,3 @@ LaTeX 2e.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
