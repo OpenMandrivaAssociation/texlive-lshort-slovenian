@@ -1,6 +1,6 @@
 Name:		texlive-lshort-slovenian
 Version:	55643
-Release:	1
+Release:	2
 Summary:	Slovenian translation of lshort
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/lshort/slovenian
