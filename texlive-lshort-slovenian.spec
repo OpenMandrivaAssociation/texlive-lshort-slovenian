@@ -1,5 +1,5 @@
 Name:		texlive-lshort-slovenian
-Version:	68204
+Version:	77050
 Release:	1
 Summary:	Slovenian translation of lshort
 Group:		Publishing
